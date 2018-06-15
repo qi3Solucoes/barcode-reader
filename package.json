@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "test": "ng test",
     "e2e": "protractor",
-    "postinstall": "ng build --aot -prod"
+    "postinstall": "ng build"
   },
   "private": true,
   "dependencies": {
