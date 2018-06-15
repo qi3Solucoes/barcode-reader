@@ -5,12 +5,12 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --aot",
+    "start": "node server.js",
     "build": "ng build --aot --prod",
-    "deploy": "ng build --aot --prod --base-href '/ng2-barcode-validator/' && angular-cli-ghpages",
     "lint": "ng lint",
     "test": "ng test",
-    "e2e": "protractor"
+    "e2e": "protractor",
+    "postinstall": "ng build --aot -prod"
   },
   "private": true,
   "dependencies": {
@@ -26,9 +26,12 @@
     "@angular/platform-browser-dynamic": "^5.2.9",
     "@angular/router": "^5.2.9",
     "core-js": "^2.5.4",
+    "express": "^4.16.3",
     "hammerjs": "^2.0.8",
+    "path": "^0.12.7",
     "quagga": "^0.12.1",
     "rxjs": "^5.5.8",
+    "typescript": "^2.8.1",
     "web-animations-js": "^2.3.1",
     "zone.js": "^0.8.23"
   },
@@ -39,6 +42,7 @@
     "@types/node": "^9.6.1",
     "angular-cli-ghpages": "^0.5.2",
     "codelyzer": "^4.2.1",
+    "enhanced-resolve": "^4.0.0",
     "jasmine-core": "2.8.0",
     "jasmine-spec-reporter": "^4.2.1",
     "karma": "^2.0.0",
@@ -51,5 +55,9 @@
     "ts-node": "^5.0.1",
     "tslint": "^5.9.1",
     "typescript": "^2.8.1"
+  },
+  "engines": {
+    "node": "10.0.0",
+    "npm": "6.1.0"
   }
 }
