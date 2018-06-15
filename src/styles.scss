@@ -1,0 +1,192 @@
+/* You can add global styles to this file, and also import other style files */
+/* fallback */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v19/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+md-sidenav-layout.m2app-dark {
+  background: black;
+}
+
+.app-content {
+  padding: 20px;
+  md-card {
+    margin: 20px;
+  }
+  md-checkbox {
+    margin: 10px;
+  }
+}
+
+.app-sidenav {
+  padding: 10px;
+  min-width: 100px;
+}
+
+.app-toolbar-filler {
+  flex: 1 1 auto;
+}
+
+.app-toolbar-menu {
+  padding: 0 14px 0 14px;
+  color: white;
+}
+
+.app-icon-button {
+  box-shadow: none;
+  user-select: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  filter: none;
+  font-weight: normal;
+  height: auto;
+  line-height: inherit;
+  margin: 0;
+  min-width: 0;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+  z-index: 99;
+}
+
+.app-action {
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.app-spinner {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  &.smaller {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.app-input-icon {
+  font-size: 16px;
+}
+
+.app-list {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  width: 350px;
+  margin: 20px;
+}
+
+.app-progress {
+  margin: 0px;
+}
+
+.input-full-width {
+  width: 100%;
+}
+
+.viewport > canvas {
+  position: inherit;
+  width: 100% !important;
+  z-index: 99;
+}
+
+.viewport > video {
+  width: 100% !important;
+}
+
+.app-content {
+  height: 100vh;
+}
+
+.flex-item {
+  padding-bottom: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.responsive-img {
+  max-width: 100%;
+  max-height: 100px;
+}
+
+.small-img {
+  max-width: 100px;
+  height: 40px;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
+.viewport {
+  position: relative;
+}
+
+.instantInput {
+  border: 0;
+  padding: 15px;
+  width: 96%;
+  font-size: 22px;
+  &:focus {
+    border: 0;
+  }
+}
+
+.show__sm {
+  display: none;
+}
+
+@media all and (max-width: 730px) {
+  .hidden__sm {
+    display: none;
+  }
+  .show__sm {
+    display: block;
+  }
+}

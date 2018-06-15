@@ -1,0 +1,12 @@
+<mat-sidenav-container [class.m2app-dark]="isDarkTheme">
+  <mat-toolbar color="primary">
+
+    {{title}}
+
+  </mat-toolbar>
+
+  <div class="app-content">
+    <router-outlet></router-outlet>
+  </div>
+</mat-sidenav-container>
+<app-fab-menu [isDarkTheme]="isDarkTheme"></app-fab-menu>
