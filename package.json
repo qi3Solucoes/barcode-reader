@@ -6,11 +6,11 @@
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
-    "build": "ng build --prod",
+    "build": "ng build --prod -aot=false",
     "lint": "ng lint",
     "test": "ng test",
     "e2e": "protractor",
-    "postinstall": "ng build"
+    "postinstall": "ng build --prod -aot=false"
   },
   "private": true,
   "dependencies": {
