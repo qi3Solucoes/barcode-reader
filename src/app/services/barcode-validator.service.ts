@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs/observable';
+import { Observable } from 'rxjs/Observable';
 import { debounceTime, distinctUntilChanged, switchMap } from 'rxjs/operators';
-import { of } from 'rxjs/observable/of';
+import { of } from 'rxjs/Observable/of';
 
 
 @Injectable()
