@@ -31,7 +31,7 @@
     "path": "^0.12.7",
     "quagga": "^0.12.1",
     "rxjs": "^5.5.8",
-    "typescript": "^2.8.1",
+    "typescript": "^2.6.2",
     "web-animations-js": "^2.3.1",
     "zone.js": "^0.8.23"
   },
@@ -44,6 +44,7 @@
     "codelyzer": "^4.2.1",
     "enhanced-resolve": "^4.0.0",
     "jasmine-core": "2.8.0",
+    "hoek": "^4.2.1",
     "jasmine-spec-reporter": "^4.2.1",
     "karma": "^2.0.4",
     "karma-chrome-launcher": "^2.2.0",
@@ -53,8 +54,7 @@
     "protractor": "^5.3.0",
     "ts-helpers": "^1.1.2",
     "ts-node": "^5.0.1",
-    "tslint": "^5.9.1",
-    "typescript": "^2.8.1"
+    "tslint": "^5.9.1"
   },
   "engines": {
     "node": "10.0.0",
